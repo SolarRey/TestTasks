@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.8.0'
+    implementation 'com.codeborne:selenide:6.19.0'
+}
+
+test {
+    useTestNG()
+}
